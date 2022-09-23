@@ -1,10 +1,11 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using CoreMVC.Model;
 using RunGroopWebApp.Data.Enum;
 
 namespace RunGroopWebApp.Models
 {
-    public class Club
+    public class Club : IModel
     {
         [Key]
         public int Id { get; set; }
@@ -13,7 +14,7 @@ namespace RunGroopWebApp.Models
         public string Image { get; set; }
         public int AddressId { get; set; }
         public Address Address { get; set; }
-        public RaceCategory RaceCategory { get; set; }
+        public ClubCategory ClubCategory { get; set; }
         public int? AppUserId { get; set; }
         public AppUser? AppUser { get; set; }
          

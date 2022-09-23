@@ -1,8 +1,8 @@
 ﻿using System.ComponentModel.DataAnnotations;
-
+using CoreMVC.Model;
 namespace RunGroopWebApp.Models
 {
-    public class Address
+    public class Address : IModel
     {
         [Key] 
         public int Id { get; set; }

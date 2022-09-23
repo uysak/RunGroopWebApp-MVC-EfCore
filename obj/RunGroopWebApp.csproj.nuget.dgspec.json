@@ -4,14 +4,14 @@
     "C:\\Users\\Neo\\source\\repos\\RunGroopWebApp\\RunGroopWebApp\\RunGroopWebApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Neo\\source\\repos\\RunGroopWebApp\\RunGroopWebApp\\RunGroopWebApp.csproj": {
+    "C:\\Users\\Neo\\source\\repos\\RunGroopWebApp\\CoreMVC\\CoreMVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Neo\\source\\repos\\RunGroopWebApp\\RunGroopWebApp\\RunGroopWebApp.csproj",
-        "projectName": "RunGroopWebApp",
-        "projectPath": "C:\\Users\\Neo\\source\\repos\\RunGroopWebApp\\RunGroopWebApp\\RunGroopWebApp.csproj",
+        "projectUniqueName": "C:\\Users\\Neo\\source\\repos\\RunGroopWebApp\\CoreMVC\\CoreMVC.csproj",
+        "projectName": "CoreMVC",
+        "projectPath": "C:\\Users\\Neo\\source\\repos\\RunGroopWebApp\\CoreMVC\\CoreMVC.csproj",
         "packagesPath": "C:\\Users\\Neo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Neo\\source\\repos\\RunGroopWebApp\\RunGroopWebApp\\obj\\",
+        "outputPath": "C:\\Users\\Neo\\source\\repos\\RunGroopWebApp\\CoreMVC\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "E:\\VisualStudioShared\\NuGetPackages"
@@ -44,7 +44,82 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Castle.Core": {
+              "target": "Package",
+              "version": "[5.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Neo\\source\\repos\\RunGroopWebApp\\RunGroopWebApp\\RunGroopWebApp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Neo\\source\\repos\\RunGroopWebApp\\RunGroopWebApp\\RunGroopWebApp.csproj",
+        "projectName": "RunGroopWebApp",
+        "projectPath": "C:\\Users\\Neo\\source\\repos\\RunGroopWebApp\\RunGroopWebApp\\RunGroopWebApp.csproj",
+        "packagesPath": "C:\\Users\\Neo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Neo\\source\\repos\\RunGroopWebApp\\RunGroopWebApp\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "E:\\VisualStudioShared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Neo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Neo\\source\\repos\\RunGroopWebApp\\CoreMVC\\CoreMVC.csproj": {
+                "projectPath": "C:\\Users\\Neo\\source\\repos\\RunGroopWebApp\\CoreMVC\\CoreMVC.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
             "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[6.0.9, )"
             },

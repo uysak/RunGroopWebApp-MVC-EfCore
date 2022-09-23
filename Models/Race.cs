@@ -1,9 +1,10 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using CoreMVC.Model;
 using RunGroopWebApp.Data.Enum;
 
 namespace RunGroopWebApp.Models
 {
-    public class Race
+    public class Race : IModel
     {
         [Key]
         public int Id { get; set; }
